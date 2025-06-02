@@ -1,0 +1,24 @@
+# Virtual environment folders
+.venv/
+env/
+ENV/
+env.bak/
+venv/
+*.env
+
+
+# videos
+*.mp4
+*.jpg
+*.png
+
+
+# IDE-specific
+.idea/
+*.iml
+__pycache__/
+.vscode
+.idea
+__pycache__
+.vscode/
+

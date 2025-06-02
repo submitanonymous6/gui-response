@@ -64,20 +64,64 @@ The output includes:
 
 ---
 
-## 📊 Dataset
+## 📊 Dataset Overview
 
-We provide a benchmark dataset of **2,458 manually annotated interactions** from **64 popular Android apps**, covering 32 app categories.
+We release a benchmark dataset of **2,458 manually annotated user interactions**, serving as the ground truth for evaluating GUI responsiveness.
 
-Each interaction is labeled with:
-- Start, response, and finish frame indices
-- Type of interaction (tap or swipe)
+📁 Annotation file:
+```text
+dataset/annotated_user_interactions_groundtruth.csv
+```
+
+Each row in the CSV corresponds to a user interaction annotated with its timing boundaries and computed responsiveness metrics.
+
 ---
 
-## 📌 Notes
+### 📄 File Format
 
-- Screencasts must be recorded with Android's **Show taps** feature enabled
-- Videos are encouraged to be recorded at 60 FPS (16.7ms per frame)
-- See the `examples/` folder for demo inputs and sample outputs
-- **GPU is required** for efficient video/image processing
+The CSV file contains the following columns:
+
+| Column Name                      | Description                                                                 |
+|----------------------------------|-----------------------------------------------------------------------------|
+| `video`                          | Name of the screencast video (excluding extension)                          |
+| `index`                          | Index of the user interaction (1-based per video)                           |
+| `index of user operation frame`  | Frame index where the user action (e.g., tap) is first observed             |
+| `index of response frame`        | Frame index where the GUI first reacts with visible feedback                |
+| `index of finish frame`          | Frame index where the GUI visual response stabilizes                        |
+| `index of end frame`             | Frame index where this interaction ends (before the next user input starts) |
+| `response time (ms)`             | Time from user operation to response frame, in milliseconds                 |
+| `finish time (ms)`               | Time from user operation to finish frame, in milliseconds                   |
+
+All frame indices are 0-based. The frames can be extracted from the videos using FFmpeg or OpenCV.
+
 ---
+
+### 📁 Example Entries
+
+```csv
+video,index,index of user operation frame,index of response frame,index of finish frame,index of end frame,response time(ms),finish time(ms)
+popular_study-art_and_design-ibis_paint-scenario1-video,1,46,62,150,167,316,2836
+popular_study-art_and_design-ibis_paint-scenario1-video,2,168,172,196,221,99,587
+popular_study-art_and_design-ibis_paint-scenario1-video,3,222,237,303,324,348,1465
+popular_study-art_and_design-ibis_paint-scenario1-video,4,325,329,343,375,109,340
+```
+
+---
+
+### 🔗 Screencast Videos
+
+The raw screencast videos associated with these annotations are hosted externally due to size constraints.
+
+📥 Download page:  
+[https://anonymous.4open.science/r/gui-response-2293/](https://anonymous.4open.science/r/gui-response-2293/)
+
+---
+
+### 📌 Notes
+
+- All annotations were created manually by experienced testers
+- Tap indicators in the screencasts were enabled via Android’s **"Show taps"** setting
+- These annotations serve as the **ground truth** for evaluating the accuracy of interaction detection and GUI responsiveness measurement
+
+
 

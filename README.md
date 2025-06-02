@@ -94,19 +94,6 @@ The CSV file contains the following columns:
 
 All frame indices are 0-based. The frames can be extracted from the videos using FFmpeg or OpenCV.
 
----
-
-### 📁 Example Entries
-
-```csv
-video,index,index of user operation frame,index of response frame,index of finish frame,index of end frame,response time(ms),finish time(ms)
-popular_study-art_and_design-ibis_paint-scenario1-video,1,46,62,150,167,316,2836
-popular_study-art_and_design-ibis_paint-scenario1-video,2,168,172,196,221,99,587
-popular_study-art_and_design-ibis_paint-scenario1-video,3,222,237,303,324,348,1465
-popular_study-art_and_design-ibis_paint-scenario1-video,4,325,329,343,375,109,340
-```
-
----
 
 ### 🔗 Screencast Videos
 

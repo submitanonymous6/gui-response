@@ -1,4 +1,5 @@
 # MobileGUIPerf: Measuring GUI Responsiveness from Mobile Screencasts
+> ⚠️ This project uses demo data from prior studies, which are unrelated to the author.
 
 This repository contains the implementation, dataset, and example output used in our study on **GUI responsiveness in mobile applications**.
 
@@ -61,6 +62,7 @@ The output includes:
 - Response and finish times per interaction
 - Optional: annotated clips or logs per user interaction
 
+## <p style="color:red;">⚠️⚠️IMPORTANT WARNING</p>
 <p style="color:red;"><strong>Warning:</strong> The file <code>demo.mp4</code> is from a previous study and is provided for demonstration purposes only. All content in the video is anonymized and has no connection to the author personally.</p>
 
 ---
@@ -99,6 +101,8 @@ All frame indices are 0-based. The frames can be extracted from the videos using
 ### 🔗 Screencast Videos
 
 The raw screencast videos associated with these annotations are hosted by the previous study [video2sceneario](https://sites.google.com/view/video2sceneario/home).
+
+## <p style="color:red;">⚠️⚠️IMPORTANT WARNING</p>
 <p style="color:red;"><strong>Warning:</strong> All screencast videos are from a previous study and have no connection to the author personally. All content is anonymized.</p>
 
 ---

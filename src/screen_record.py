@@ -77,7 +77,6 @@ class ScreenRecord:
         clf = IsolationForest(random_state=0).fit(reshaped_frame_diffs_ssim_score)
         self.is_outlier_frame_list = clf.predict(reshaped_frame_diffs_ssim_score)
         assert len(self.frame_diffs_ssim_score) == len(self.is_outlier_frame_list)
-        # self.visual_ssim_outlier()
 
     def detect_outlier_frame_using_threshold(self):
         print('detect outlier frame using threshold')

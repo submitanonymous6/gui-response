@@ -28,7 +28,6 @@ GUI-Response/
 ├── examples/       # Sample videos and output reports
 ├── models/         # Pretrained detection model (e.g., Faster R-CNN)
 ├── src/            # Core implementation
-├── scripts/        # Utility scripts
 ├── requirements.txt
 └── README.md
 ```
@@ -46,11 +45,11 @@ pip install -r requirements.txt
 ```
 
 Dependencies include:
-- PyTorch
-- torchvision
-- OpenCV
 - scikit-learn
-- ffmpeg-python
+- PyTorch
+- OpenCV
+- pytorch-msssim
+- TensorFlow
 
 ### 2. Run MobileGUIPerf
 
@@ -97,10 +96,7 @@ All frame indices are 0-based. The frames can be extracted from the videos using
 
 ### 🔗 Screencast Videos
 
-The raw screencast videos associated with these annotations are hosted externally due to size constraints.
-
-📥 Download page:  
-[https://anonymous.4open.science/r/gui-response-2293/](https://anonymous.4open.science/r/gui-response-2293/)
+The raw screencast videos associated with these annotations are hosted by the previous study [video2sceneario](https://sites.google.com/view/video2sceneario/home).
 
 ---
 

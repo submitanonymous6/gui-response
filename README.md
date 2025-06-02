@@ -99,6 +99,7 @@ All frame indices are 0-based. The frames can be extracted from the videos using
 ### 🔗 Screencast Videos
 
 The raw screencast videos associated with these annotations are hosted by the previous study [video2sceneario](https://sites.google.com/view/video2sceneario/home).
+<p style="color:red;"><strong>Warning:</strong> All screencast videos are from a previous study and have no connection to the author personally. All content is anonymized.</p>
 
 ---
 

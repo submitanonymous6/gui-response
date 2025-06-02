@@ -61,6 +61,8 @@ The output includes:
 - Response and finish times per interaction
 - Optional: annotated clips or logs per user interaction
 
+<p style="color:red;"><strong>Warning:</strong> The file <code>demo.mp4</code> is from a previous study and is provided for demonstration purposes only. All content in the video is anonymized and has no connection to the author personally.</p>
+
 ---
 
 ## 📊 Dataset Overview

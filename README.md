@@ -1,8 +1,8 @@
-# MobileGUIPerf: Measuring GUI Responsiveness from Mobile Screencasts
+# GUIPerf: Quantifying User-Perceived GUI Responsiveness in Mobile Applications
 
 This repository contains the implementation, dataset, and example output used in our study on **GUI responsiveness in mobile applications**.
 
-**MobileGUIPerf** is a black-box tool that analyzes screencast videos captured during automated GUI testing to measure **user-perceived GUI responsiveness**. It automatically detects user actions (e.g., taps or swipes) and computes two key metrics based on visual changes in frames:
+**GUIPerf** is a black-box tool that analyzes screencast videos captured during automated GUI testing to quantify **user-perceived GUI responsiveness**. It automatically detects user actions (e.g., taps or swipes) and computes two key metrics based on visual changes in frames:
 
 - **Response Time**: Time from the user action to the first visible feedback
 - **Finish Time**: Time until the visual feedback stabilizes
@@ -50,7 +50,7 @@ Dependencies include:
 - pytorch-msssim
 - TensorFlow
 
-### 2. Run MobileGUIPerf
+### 2. Run GUIPerf
 
 ```bash
 python src/main.py --video examples/demo.mp4 --output results/

@@ -1,5 +1,4 @@
 # MobileGUIPerf: Measuring GUI Responsiveness from Mobile Screencasts
-> ⚠️ This project uses demo data from prior studies, which are unrelated to the author.
 
 This repository contains the implementation, dataset, and example output used in our study on **GUI responsiveness in mobile applications**.
 
@@ -8,12 +7,11 @@ This repository contains the implementation, dataset, and example output used in
 - **Response Time**: Time from the user action to the first visible feedback
 - **Finish Time**: Time until the visual feedback stabilizes
 
-> 🔧 Note: To improve readability and usability, the code is still under active development and may be updated regularly.
 ---
 
 ## 🎯 Features
 
-- **No source code required**: Operates solely on video (black-box analysis)
+- **No target app source code required**: Operates solely on screen recording video (black-box analysis)
 - **Automatic interaction detection**: Tap and swipe detection via Faster R-CNN
 - **Visual similarity-based timing**: Uses SSIM + Isolation Forest to detect UI response and finish frames
 - **Scalable**: Designed to process thousands of screencasts daily
@@ -62,9 +60,6 @@ The output includes:
 - Response and finish times per interaction
 - Optional: annotated clips or logs per user interaction
 
-## <p style="color:red;">⚠️⚠️IMPORTANT WARNING</p>
-<p style="color:red;"><strong>Warning:</strong> The file <code>demo.mp4</code> is from a previous study and is provided for demonstration purposes only. All content in the video is anonymized and has no connection to the author personally.</p>
-
 ---
 
 ## 📊 Dataset Overview
@@ -100,10 +95,7 @@ All frame indices are 0-based. The frames can be extracted from the videos using
 
 ### 🔗 Screencast Videos
 
-The raw screencast videos associated with these annotations are hosted by the previous study [video2sceneario](https://sites.google.com/view/video2sceneario/home).
-
-## <p style="color:red;">⚠️⚠️IMPORTANT WARNING</p>
-<p style="color:red;"><strong>Warning:</strong> All screencast videos are from a previous study and have no connection to the author personally. All content is anonymized.</p>
+The raw screencast videos associated with the released interaction annotations are available [here](https://sites.google.com/view/video2sceneario/home).
 
 ---
 

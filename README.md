@@ -95,7 +95,7 @@ All frame indices are 0-based. The frames can be extracted from the videos using
 
 ### 🔗 Screencast Videos
 
-The raw screencast videos associated with the released interaction annotations are available [here](https://sites.google.com/view/video2sceneario/home).
+The raw screencast videos are available [here](https://sites.google.com/view/video2sceneario/home).
 
 ---
 
